@@ -1,0 +1,15 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.catName {
+    color: green;
+    border: 2px solid blue;
+}
+
+.mainNav ul li {
+    color: red;
+}
+#aboutUs{
+    color: gray;
+}
