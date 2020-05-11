@@ -1,0 +1,25 @@
+* {
+    background-color: darkmagenta;
+}
+
+body {
+    font-family: helvetica,sans-serif;
+    background-color: beige;
+}
+
+h1 {
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+p {
+    color: rgb(100,124,200);
+}
+
+.more-content {
+    color: red;
+    background-color: cadetblue;
+}
+
+#mmcontent {
+    background-color: crimson;
+}
