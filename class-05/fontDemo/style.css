@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Pangolin&display=swap');
+
+body {
+  background: rgb(153, 162, 241);
+}
+
+#intro {
+  /* font */
+  font-family: fantasy;
+}
+
+#details {
+  /* different font */
+  /* font-family: monospace; */
+  font-family: 'Pangolin', cursive;
+
+}
+#more-details {
+  /* google font */
+  font-family: 'Balsamiq Sans', cursive;
+}
