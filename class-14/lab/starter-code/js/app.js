@@ -1,4 +1,7 @@
 'use strict';
+var getelement=document.getElementById('items');
+var getquantity=document.getElementById('quantity');
+
 
 // Cart constructor.
 var Cart = function(items) {
@@ -8,22 +11,31 @@ var Cart = function(items) {
 
 Cart.prototype.addItem = function(product, quantity) {
   // TODO: Fill in this instance method to create a new CartItem and add it to this.items
+  this.items.push(newcartIteam(product,quantity));
 };
 
 Cart.prototype.saveToLocalStorage = function() {
   // TODO: Fill in this instance method to save the contents of the cart to localStorage
+  localStorage.setItem('cart',JSON.stringify(CartItem.all));
 };
 
 Cart.prototype.removeItem = function(item) {
   // TODO: Fill in this instance method to remove one item from the cart.
   // Note: You will have to decide what kind of parameter to pass in here!
+// console.table(this.items);
+// this.items.splice(index,1);
+// console.table(this.items);
+event.path[1].remove();
+
 };
 
 var CartItem = function(product, quantity) {
   this.product = product;
   this.quantity = quantity;
+  CartItem.all.push(this);
 };
 
+CartItem.all=[];
 // Product contructor.
 var Product = function(filePath, name) {
   this.filePath = filePath;
